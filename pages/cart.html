@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/0e7957413b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+
+            <section class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo1.png" alt="">
+                </a>
+            </section>
+
+
+            <section class="user">
+                <a href="../pages/login.html"><i class="far fa-user"></i></a>
+                <a href="../pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+            </section>
+
+            <section class="burger">
+                <input type="checkbox" name="burger" id="burger">
+                <label for="burger"><i class="fas fa-bars"></i> </i></label>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">informacion</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main class="cart">
+        <section class="producto-y-resumen">
+            <article class="todos-productos">
+                <article class="producto">
+                    <div class="imagenes">
+                        <img class="gatos" src="../images/comidaGatos.png" alt="agility gatos 1,5kg">
+                    </div>
+                    <div class="nombre">
+                        <h3>agility gatos 1,5kg</h3>
+                    </div>
+                    <div class="detail">
+                        <div class="precio-descuento">
+                            <p class="precio-secundario">
+                                $5000</p>
+                            <span>15%</span>
+                            <span class="precio-principal">$4250</span>
+                        </div>
+                        <div class="añadir-elementos">
+                            <div class="restar">-</div>
+                            <input type="number" value="1">
+                            <div class="agregar">+</div>
+                        </div>
+                    </div>
+                    <button class="borrar"><i class="fas fa-times"></i></button>
+                </article>
+
+                <article class="producto">
+                    <div class="imagenes">
+                        <img class="adorno" src="../images/adorno.png" alt="adorno pecera con calaveras">
+                    </div>
+                    <div class="nombre">
+                        <h3>adorno cueva con calaveras</h3>
+                    </div>
+                    <div class="detail">
+                        <div class="precio-descuento">
+                            <p class="precio-secundario">
+                                $3000</p>
+                            <span>5%</span>
+                            <span class="precio-principal">$2850</span>
+                        </div>
+                        <div class="añadir-elementos">
+                            <div class="restar">-</div>
+                            <input type="number" value="1">
+                            <div class="agregar">+</div>
+                        </div>
+                    </div>
+                    <button class="borrar"><i class="fas fa-times"></i></button>
+                </article>
+            </article>
+
+
+            <article class="resumen">
+                <div class="resume">
+                    <form action="" method="post" id="checkout">
+                        <p><span>Subtotal</span> <span>$8000</span></p>
+                        <hr>
+                        <p><span>Ahorro total</span> <span>-$900</span></p>
+                        <hr>
+                        <p><span>Calcula tu Envio</span>
+                        <div class="postal">
+                            <label for="envio">Codigo postal</label>
+                            <input type="number" name="envio" id="envio" placeholder="Ejemplo: 8318">
+                        </div>
+                        <hr>
+                        <p><span>Precio Final</span> <span>$7100</span></p>
+                        <br />
+                        <a class="button" href="#" onclick="document.getElementById('checkout').submit()"><i
+                                class="fa fa-shopping-cart"></i>Realizar Pedido</a>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="categorias">
+            <h1>Categorías</h1>
+            <nav>
+                <ul>
+                    <a href="../index.html">
+                        <li>inicio</li>
+                    </a>
+                    <a href="">
+                        <li>productos</li>
+                    </a>
+                    <a href="">
+                        <li>informacion</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+        <section class="redes">
+            <h1>Redes Sociales</h1>
+            <ul class="Sociales">
+                <li><a href="www.whatsapp.com"><i class="fab fa-whatsapp-square"></i></a>
+                    <p>+54(299)668-1457</p>
+                </li>
+                <li><a href="www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+                    <p>@loving-paws</p>
+                </li>
+                <li><a href="4969468"><i class="fas fa-phone"></i></a>
+                    <p>telefono fijo</p>
+                </li>
+                <li><a href="https://goo.gl/maps/vYdhbricnJvRKqKV7"><i class="fas fa-map-marker-alt"></i></a>
+                    <p>perito moreno 280</p>
+                </li>
+            </ul>
+        </section>
+        <section class="mapa">
+            <h1>Encuéntranos</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.5058974383537!2d-68.05786062432333!3d-38.95811490030257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a322cca371ebb%3A0x5525c2cd3c5e82c6!2sPerito%20Moreno%20280%2C%20Q8302FAB%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1702101346317!5m2!1ses!2sar"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </footer>
+
+</body>
+
+</html>
