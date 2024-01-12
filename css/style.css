@@ -103,10 +103,6 @@ header .user {
 }
 
 /* footer */
-h4{
-    padding-bottom: 1%;
-}
-
 footer{
     position: relative;
     margin-top:auto;
@@ -116,6 +112,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+footer h4{
+    padding-bottom: 1%;
 }
 
 footer a{
@@ -575,6 +575,16 @@ footer i{
     border-radius: 100%;
 }
 
+/* informacion */
+.info h1{
+    padding-bottom: 20px;
+    font-size: larger;
+}
+.info p{
+    padding-bottom: 10px;
+    font-size: large;
+}
+
 /*queries header  */
 @media (min-width:720px){
     header{
@@ -695,9 +705,9 @@ footer i{
         flex-direction: column;
     }
 
-    footer .categorias{
+    /* footer .categorias{
         height:100%
-    }
+    } */
     
     footer .redes nav{
         margin: 0;
