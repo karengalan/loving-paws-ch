@@ -39,7 +39,7 @@
                 <nav>
                     <ul class="menu">
                         <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="">Productos</a></li>
+                        <li><a href="./pages/listado.html">Productos</a></li>
                         <li><a href="./pages/info.html">informacion</a></li>
                     </ul>
                 </nav>
@@ -47,83 +47,123 @@
         </div>
     </header>
     <main class="index">
-        <section class="banner">
-            <img src="./images/banner1.png" alt="">
-        </section>
         <section class="categoria">
             <h3>Nuestras categorias</h3>
-            <a href="" class="animal"><img src="./images/menuGato.png" alt="Gato"></a>
-            <a href="" class="animal"><img src="./images/menuPerro.png" alt="Perro"></a>
-            <a href="" class="animal"><img src="./images/menuPajaro.png" alt="Ave"></a>
-            <a href="" class="animal"><img src="./images/menuPez.png" alt="Pez"></a>
+            <img src="./images/menuGato.png" alt="Gato">
+            <img src="./images/menuPerro.png" alt="Perro">
+            <img src="./images/menuPajaro.png" alt="Ave">
+            <img src="./images/menuPez.png" alt="Pez">
         </section>
-        <section class="vista-productos">
+        <section class="productos">
             <h2>productos</h2>
-            <div class="grid text-center">
+            <section class="grid">
+                <!-- cama -->
                 <div class="g-col-6 g-col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="./images/adorno.png" class="card-img-top" alt="adorno cueva con calaveras">
-                        <div class="card-body">
-                            <h5>Cueva con calavera </h5>
-                            <p>$3000</p>
-                            <button><a href="./pages/product-adorno.html">ver</a></button>
-                            <button><a href=""><i class="fas fa-shopping-cart"></i></a></button>
+                    <div class="card">
+                        <div class="imagen">
+                            <img src="./images/cama.png" alt="cama azul para mascotas">
                         </div>
-                    </div>
-                </div>
-                <div class="g-col-6 g-col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="./images/comidaGatos.png" class="card-img-top" alt="bolsa alimento gatos">
-                        <div class="card-body">
-                            <h5>Agility gato adulto 1.5kg </h5>
-                            <p>$5000</p>
-                            <button><a href="./pages/product-gato.html">ver</a></button>
-                            <button><a href=""><i class="fas fa-shopping-cart"></i></a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="g-col-6 g-col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="./images/cama.png" class="card-img-top" alt="cama azul perro o gato">
-                        <div class="card-body">
-                            <h5>cama para mascotas </h5>
+                        <div class="contenido-oculto">
+                            <h3>Cama para mascotas</h3>
                             <p>$8900</p>
-                            <button><a href="./pages/product-cama.html">ver</a></button>
-                            <button><a href=""><i class="fas fa-shopping-cart"></i></a></button>
+                            <div class="botones">
+                                <a href="./pages/cart.html">
+                                    <button name="button"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                                </a>
+                                <a href="./pages/product-cama.html">
+                                    <button name="button"><i class="fa-solid fa-eye"></i>Ver detalle</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- cepillo -->
                 <div class="g-col-6 g-col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="./images/cepillo.png" class="card-img-top" alt="cepillo curvo chico">
-                        <div class="card-body">
-                            <h5>cardina chica curvo </h5>
+                    <div class="card">
+                        <div class="imagen">
+                            <img src="./images/cepillo.png" alt="cepillo cardina pequeño ">
+                        </div>
+                        <div class="contenido-oculto">
+                            <h3>cardina curva chica</h3>
                             <p>$2400</p>
-                            <button><a href="./pages/product-cepillo.html">ver</a></button>
-                            <button><a href=""><i class="fas fa-shopping-cart"></i></a></button>
+                            <div class="botones">
+                                <a href="./pages/cart.html">
+                                    <button name="button"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                                </a>
+                                <a href="./pages/product-cepillo.html">
+                                    <button name="button"><i class="fa-solid fa-eye"></i>Ver detalle</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- adorno -->
                 <div class="g-col-6 g-col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="./images/jaula.png" class="card-img-top" alt="jaula para aves">
-                        <div class="card-body">
-                            <h5>jaula para aves </h5>
-                            <p>$12400</p>
-                            <button><a href="./pages/product-jaula.html">ver</a></button>
-                            <button><a href=""><i class="fas fa-shopping-cart"></i></a></button>
+                    <div class="card">
+                        <div class="imagen">
+                            <img src="./images/adorno.png" alt="cueva con dos calaveras ">
+                        </div>
+                        <div class="contenido-oculto">
+                            <h3>adorno cueva con calaveras</h3>
+                            <p>$3000</p>
+                            <div class="botones">
+                                <a href="./pages/cart.html">
+                                    <button name="button"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                                </a>
+                                <a href="./pages/product-adorno.html">
+                                    <button name="button"><i class="fa-solid fa-eye"></i>Ver detalle</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+                <!-- jaula -->
+                <div class="g-col-6 g-col-md-4">
+                    <div class="card">
+                        <div class="imagen">
+                            <img src="./images/jaula.png" alt="jaula mediana">
+                        </div>
+                        <div class="contenido-oculto">
+                            <h3>jaula para aves</h3>
+                            <p>$12400</p>
+                            <div class="botones">
+                                <a href="./pages/cart.html">
+                                    <button name="button"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                                </a>
+                                <a href="./pages/product-jaula.html">
+                                    <button name="button"><i class="fa-solid fa-eye"></i>Ver detalle</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--alimento  -->
+                <div class="g-col-6 g-col-md-4">
+                    <div class="card">
+                        <div class="imagen">
+                            <img src="./images/comidaGatos.png" alt="alimento para gatos">
+                        </div>
+                        <div class="contenido-oculto">
+                            <h3>Agility gato adulto 1.5 kg</h3>
+                            <p>$5000</p>
+                            <div class="botones">
+                                <a href="./pages/cart.html">
+                                    <button name="button"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
+                                </a>
+                                <a href="./pages/product-gato.html">
+                                    <button name="button"><i class="fa-solid fa-eye"></i>Ver detalle</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
-        <div class="grid text-center">
-            <div class="g-col-6 g-col-md-4"><img src="./images/Agility.png" alt="agility"></div>
-            <div class="g-col-6 g-col-md-4"><img src="./images/Eukanuba.jpeg" alt="eukanuba"></div>
-            <div class="g-col-6 g-col-md-4"><img src="./images/Royal-canin.png" alt="royal canin"></div>
-            <div class="g-col-6 g-col-md-4"><img src="./images/whiskas.jpeg" alt="whiskas"></div>
-            <div class="g-col-6 g-col-md-4"><img src="./images/sieger.png" alt="sieger"></div>
+        <div class="marcas">
+            <img src="./images/agility.png" alt="Agility">
+            <img src="./images/eukanuba.png" alt="eukanuba">
+            <img src="./images/Royal-canin.png" alt="royal canin">
+            <img src="./images/whiskas.png" alt="whiskas">
+            <img src="./images/sieger.png" alt="sieger">
         </div>
     </main>
     <footer>
