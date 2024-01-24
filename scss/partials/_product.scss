@@ -1,0 +1,103 @@
+.detalle-producto {
+    margin-top: 5%;
+    
+    .imgproduct {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+        
+        img {
+            width: 200px;
+            height: 200px;
+            box-shadow: -2px 4px 29px 0px rgb(156, 155, 156);
+        }
+    }
+    
+    .detalle {
+        .ordendes {
+            .descripcion {
+                margin: 15px;
+                
+                h4 {
+                    margin-top: 15px;
+                    font-size: large;
+                    padding-bottom: 10px;
+                }
+                
+                .precio {
+                    font-size: 2em;
+                }
+            }
+        }
+        
+        .imgproduct {
+            img {
+                width: 30vw;
+                height: 30vw;
+                margin: 1%;
+            }
+        }
+        
+        .compra {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+            h4 {
+                margin: auto;
+                margin-bottom: 20px;
+                font-size: 1.5em;
+            }
+            
+            .cantidad {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $celeste;
+                height: 60px;
+                width: 220px;
+                margin: auto;
+                border-radius: 10%;
+                
+                form input {
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                button {
+                    height: 30px;
+                    width: 30px;
+                    margin: 2%;
+                }
+            }
+            
+            .confirmar {
+                height: 30px;
+                width: 200px;
+                margin: 20px auto;
+                background-color: $celeste;
+                border: none;
+                border-radius: 10%;
+            }
+        }
+    }
+    
+    @media (min-width: 200px) {
+        .imgproduct {
+            margin-bottom: 35px;
+        }
+        
+        .detalle {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            
+            .compra .confirmar {
+                max-width: none;
+            }
+        }
+    }
+}

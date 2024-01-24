@@ -1,0 +1,82 @@
+.register {
+    h1 {
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 2%;
+    }
+    
+    a {
+        color: black;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: larger;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 3%;
+        
+        label {
+            margin-bottom: 5px;
+            font-size: large;
+        }
+        
+        input {
+            width: 70%;
+            padding: 20px;
+            background-color: $lila;
+            border: none;
+            box-shadow: 5px 5px 19px 0px $azul;
+            border-radius: 15px;
+        }
+    }
+    
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    button {
+        padding: 15px;
+        background-color: #cef3d4;
+        color: black;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        margin: 0 5% 5% 0;
+        box-shadow: 5px 5px 19px 0px $azul;
+    }
+    
+    small {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: $rojo;
+    }
+    
+    @media (min-width: 200px) {
+        .container input {
+            width: 70%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .todo {
+            justify-content: space-between;
+        }
+        
+        .container input {
+            width: 48%;
+        }
+    }
+}

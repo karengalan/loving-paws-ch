@@ -1,4 +1,4 @@
- * {
+/*  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+} */
 
 /* header */
 header {
@@ -101,9 +101,9 @@ header .user {
     width: 20%;
     color: black;
 }
-
+ 
 /* footer */
-footer {
+ footer {
     position: relative;
     margin-top: auto;
     width: 100%;
@@ -217,14 +217,6 @@ footer i {
     margin: 0 5% 5% 0;
     box-shadow: 5px 5px 19px 0px #187498ba;
 } 
-
-.register small{
-    
-    margin-top: 5px;    
-    margin-bottom: 5px;
-    color: #A30015;
-    
-}
 
 /* login */
 .login .todo {
@@ -405,13 +397,13 @@ footer i {
     flex-direction: row;
 }
 
-.cart .detail {
+/* .cart .detail {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
+ */
 .cart .añadir-elementos .agregar {
     background-color: gray;
     color: white;

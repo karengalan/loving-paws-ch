@@ -1,0 +1,86 @@
+.login {
+    .todo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .titulo {
+        font-weight: 300;
+        margin-bottom: 2%;
+    }
+    
+    .inicio-de-sesion {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .email h3,
+    .pass h3 {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+    
+    .type-user,
+    .type-pass {
+        width: 100%;
+        padding: 15px;
+        box-shadow: 5px 5px 19px 0px $azul;
+        margin-block: 3%;
+        border: none;
+        background-color: $lila;
+        border-radius: 15px;
+    }
+    
+    small {
+        margin-top: 5px;    
+        margin-bottom: 5px;
+        color: $rojo;
+    }
+    
+    .linkeados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .lost-pass {
+        font-size: 75%;
+    }
+    
+    .init {
+        background-color: $verdeClaro;
+        padding: 15px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 19px 0px $azul;
+        margin-bottom: 10px;
+        color: black;
+        border: none;
+    }
+    
+    .create-user {
+        font-size: 80%;
+    }
+    
+    @media (min-width: 200px) {
+        .inicio-de-sesion {
+        width: 80%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .todo {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .inicio-de-sesion {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}
