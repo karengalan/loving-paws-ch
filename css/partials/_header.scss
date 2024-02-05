@@ -3,11 +3,9 @@ header {
     margin-bottom: 20px;
     background-color: $verde;
     width: 100%;
-
     a {
         color: black;
     }
-
     .top {
         display: flex;
         flex-wrap: wrap;
@@ -17,23 +15,19 @@ header {
         position: relative;
         right: 0;
     }
-
     .logo {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 70%;
-
         img {
             position: relative;
             width: 80px;
             height: 80px;
         }
     }
-
     .burger {
         width: 100%;
-
         label {
             position: absolute;
             top: 15px;
@@ -45,15 +39,13 @@ header {
         
         input {
             display: none;
+            &:checked ~ nav {
+                display: flex;
+            }
         }
-
         nav {
             display: none;
             width: 100%;
-            
-            input:checked ~ & {
-                display: flex;
-            }
             
             ul {
                 padding-bottom: 20px;
